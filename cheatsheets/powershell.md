@@ -1,59 +1,77 @@
 # PowerShell
 
-PowerShell Logo goes here
+![powershellicon](..\cheatsheets\PowerShell_5.0_icon.png)
 
-About PowerShellport
+## About PowerShell
 
-**PowerShell** is a powerful command-line shell and scripting language developed by Microsoft. It is designed to help users automate tasks, manage systems, and perform administrative tasks efficiently. Built on the .NET framework, **PowerShell** is both a ***command-line tool*** and ***a scripting environment***, making it a versatile tool for programmers and system administrators.
+[**PowerShell**](https://docs.microsoft.com/en-us/powershell/) is a powerful command-line shell and scripting language developed by Microsoft. It is designed to help users automate tasks, manage systems, and perform administrative tasks efficiently. Built on the [.NET framework](https://learn.microsoft.com/en-us/dotnet/framework/get-started/overview), **PowerShell** is both a ***command-line tool*** and ***a scripting environment***, making it a versatile tool for programmers and system administrators.
 
-> "PowerShell is great because we had a series of rockstar engineers add their awesomeness to the project."  *( from the interview with Jeffrey Snover, PowerShell Inventor)*
+> "PowerShell is great because we had a series of rockstar engineers add their awesomeness to the project."
+
+> *Source: [interview](https://evrone.com/blog/jeffrey-snover-interview) with Jeffrey Snover, PowerShell Inventor*
 
 ## Why Learn PowerShell?
 PowerShell is an essential tool for:
-Automating repetitive tasks.
-Managing and configuring systems.
-Working with files, processes, and services.
-Interacting with APIs and web services.
-Writing scripts to solve complex problems.
 
-PowerShell Features and Terms
-Cmdlets: Lightweight commands that perform specific functions.
-Scripting: Write and execute scripts, series of commands, to automate tasks.
-Pipeline: Chain commands together to pass data between them using |.
-Remote Management: Execute commands on remote systems.
-Modules: Extend functionality with additional cmdlets and scripts.
-Extensibility: Create custom functions, modules, and scripts.
-Cross-Platform: PowerShell Core runs on Windows, macOS, and Linux.
+1. Automating repetitive tasks.
+   
+2. Managing and configuring systems.
+   
+3. Working with files, processes, and services.
+   
+4. Interacting with APIs and web services.
+   
+5. Writing scripts to solve complex problems.
 
-PowerShell History
+## PowerShell Features and Terms
+* **Cmdlets**: Lightweight commands that perform specific functions.
+  
+* **Scripting**: Write and execute scripts, series of commands, to automate tasks.
+  
+* **Pipeline**: Chain commands together to pass data between them using |.
+  
+* **Remote Management**: Execute commands on remote systems.
+  
+* **Modules**: Extend functionality with additional cmdlets and scripts.
+  
+* **Extensibility**: Create custom functions, modules, and scripts.
+  
+* **Cross-Platform**: PowerShell Core runs on Windows, macOS, and Linux.
 
-PowerShell Version Comparison
-Version:Release Year:Key Features                            
-1.0:2006:Initial release Windows XP SP2 and Windows Server 2003.
-2.0:2009:Introduced remote management and modules.
-5.1:2016:Last Windows-only version               
-6.0:2018:Known as PowerShell Core 6.0. First cross-platform version.
-7.0:2020:Unified Windows PowerShell and PowerShell Core, offering a modern, cross-platform experience.
+## PowerShell History
 
-Version Summary
-Windows PowerShell: Versions 1.0 to 5.1 (Windows-only).
-PowerShell Core: Versions 6.0 and above (cross-platform).
+### PowerShell Version Comparison
+
+ | Version | Release Year | Key Features                 |                          
+ | --------| ------------ | ------------ 
+ | 1.0     | 2006         | Initial release Windows XP SP2 and Windows Server 2003.
+ | 2.0     | 2009         | Introduced remote management and modules.
+ | 5.1     | 2016         | Last Windows-only version               
+ | 6.0     | 2018         | Known as PowerShell Core 6.0. First cross-platform version.
+ | 7.0     | 2020         | Unified Windows PowerShell and PowerShell Core, offering a modern, cross-platform experience.
+  
+### Version Summary
+* **Windows PowerShell**: Versions 1.0 to 5.1 (Windows-only).
+  
+* **PowerShell Core**: Versions 6.0 and above (cross-platform).
 
 
-PowerShell for Beginners
+## PowerShell for Beginners
 
-Basic Commands to Get Started
+### Basic Commands to Get Started
 
-Get-Command: Lists all available commands.
-Get-Help: Provides help information for commands.
-Get-Process: Displays all running processes.
-Stop-Process: Stops a specific process.
-Set-Location: Changes the current directory (like cd in Command Prompt).
-New-Item: Creates a new file or directory.
+**`Get-Command`**: Lists all available commands.
+**`Get-Help`**: Provides help information for commands.
+**`Get-Process`**: Displays all running processes.
+**`Stop-Process`**: Stops a specific process.
+**`Set-Location`**: Changes the current directory (like `cd` in Command Prompt).
+**`New-Item`**: Creates a new file or directory.
 
-Example Script
+### Example Script
 
 Here’s a simple script to list all files in a directory and display their sizes:
+
+```powershell
 # Get all files in the current directory
 $files = Get-ChildItem
     
@@ -61,12 +79,13 @@ $files = Get-ChildItem
 foreach ($file in $files) {
 Write-Output "$($file.Name) - $($file.Length) bytes"
 }
+```
 
-Editors for PowerShell Scripting
+### Editors for PowerShell Scripting
 
 When writing and debugging PowerShell scripts, using a dedicated editor can greatly enhance your productivity. Here are two popular options:
 
-Windows PowerShell Integrated Scripting Environment (ISE)
+#### Windows PowerShell Integrated Scripting Environment (ISE)
 
 What it is: A built-in editor for Windows PowerShell (versions 1.0 to 5.1).
 Features:
@@ -76,20 +95,22 @@ Integrated console for testing scripts.
 Multi-tab interface for working with multiple scripts.
 Best for: Beginners and users working on older versions of PowerShell.
 
-ISE Image goes here
+![Ise Panes pic](..\cheatsheets\ISE_panes.png)
 
-Visual Studio Code (VS Code)
+#### Visual Studio Code (VS Code)
 
-What it is: A free, open-source, cross-platform code editor by Microsoft.
-Features:
-Syntax highlighting and IntelliSense for PowerShell.
-Integrated terminal for running scripts.
-Extensions for additional functionality (e.g., PowerShell extension).
-Support for Git and other version control systems.
-Cross-platform (Windows, macOS, Linux).
-Best for: Modern PowerShell development, especially with PowerShell 7 and cross-platform scripting.
+* **What it is**: A free, open-source, cross-platform code editor by Microsoft.
+  
+* **Features**:
+  * Syntax highlighting and IntelliSense for PowerShell.
+  * Integrated terminal for running scripts.
+  * Extensions for additional functionality (_e.g., PowerShell extension_).
+  * Support for Git and other version control systems.
+  * Cross-platform (_Windows, macOS, Linux_).
+  
+* **Best for**: Modern PowerShell development, especially with PowerShell 7 and cross-platform scripting.
 
-VSCode Image goes here
+![vscode image](..\cheatsheets\vs_code.png)
 
 Useful Resources for Learning PowerShell
 Official PowerShell Documentation
