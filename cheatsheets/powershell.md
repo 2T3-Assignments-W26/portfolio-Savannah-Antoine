@@ -2,6 +2,22 @@
 
 ![powershellicon](..\cheatsheets\PowerShell_5.0_icon.png)
 
+## Essential Commands and Aliases
+
+|Task                   |Cmdlet                           |Common Aliases|
+|---------------------- |---------------------------------|--------------|
+|Get Help               |`Get-Help <Command-Name>`        |``man``       |
+|List commands          |`Get-Command`                    |              |
+|Get current location   |`Get-Command`                    |`pwd`         |
+|Change location        |`Set-Location <Path>`            |`cd`          |
+|List directory contents|`Get-ChildItem`                  |`ls,dir,gci`  |
+|Get file content       |`Get-Content <File-Path>`        |`gc,cat`      |
+|Copy items             |`Copy-Item <Source><Destination>`|`cp,cpi`      |
+|Move items             |`Move-Item <Source><Destination>`|`mv,mi`       |
+|Remove items           |`Remove-Item <Name>`             |`rm`          |
+|Create new item        |`New-Item <Name>`                |`mkdir,touch` |
+|Manage processes       |`Get-process,Stop-process`       |              |
+|Manage services        |`Get-Service,Start-Service`      |              |     
 ## About PowerShell
 
 [**PowerShell**](https://docs.microsoft.com/en-us/powershell/) is a powerful command-line shell and scripting language developed by Microsoft. It is designed to help users automate tasks, manage systems, and perform administrative tasks efficiently. Built on the [.NET framework](https://learn.microsoft.com/en-us/dotnet/framework/get-started/overview), **PowerShell** is both a ***command-line tool*** and ***a scripting environment***, making it a versatile tool for programmers and system administrators.
