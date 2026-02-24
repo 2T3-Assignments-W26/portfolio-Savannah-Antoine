@@ -5,4 +5,6 @@
   - [Git](cheatsheets/git.md)
   - [PowerShell](cheatsheets/powershell.md)
 
-- About Me
+  - About me
+    - [My Projects](cheatsheets/myProjects.md)
+    - [Online Resume](cheatsheets/Savannah_Antoine_1921868.md)
