@@ -15,3 +15,10 @@ Experienced in customer service with problem-solving capabilities. Skilled in co
  * Prepared orders and completed task efficiently
  * Ensured accuracy in transactions and handling money
 
+## Skills
+
+|Technical Skills| Organizational Skills|
+|----------------|--------------------- |
+|Microsoft Suite | Time-management      |
+|Programming (C#)| Multi-tasking        |
+
