@@ -20,5 +20,14 @@ Experienced in customer service with problem-solving capabilities. Skilled in co
 |Technical Skills| Organizational Skills|
 |----------------|--------------------- |
 |Microsoft Suite | Time-management      |
-|Programming (C#)| Multi-tasking        |
+|Programming (C#)| Multi-tasking        | 
+
+## Education
+
+|Degree                      | School              |Year  |
+|----------------------------|---------------------|------|
+|High School Diploma         |Riverdale High School|2018  |
+|Cegep Diploma (in progress) |John Abbott College  |2026  |
+
+
 
