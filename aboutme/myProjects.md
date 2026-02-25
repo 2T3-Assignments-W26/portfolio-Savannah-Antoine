@@ -91,4 +91,14 @@ For this game it's especially geared towards the mathematical minds out there, f
 >"Hailstone Sequence or the Syracuse Problem"
 
 ## Technologies Used 
-*Programming Language: C#
+* Programming Language: C#
+
+### Area of Rectangles 
+!["image"](..\aboutme\Rectanglegame.png)
+
+
+### Collatz Conjecture
+!["image"](..\aboutme\Collatz.png)
+
+### Hi Lo Game
+!["image"](..\aboutme\HiLo.png)
