@@ -102,3 +102,106 @@ For this game it's especially geared towards the mathematical minds out there, f
 
 ### Hi Lo Game
 !["image"](..\aboutme\HiLo.png)
+
+## Code Snippets
+
+### First Code Example
+```C#
+ static void OldestPerson()
+ {
+           bool success = true;
+           string name, oldestname="";
+           Int32 age,oldestage=0;
+
+     //use boolean variable success to loop and stay in function
+     //let user enter an age and number repeatedly by using loop
+     //when name is end output the name and age of oldest
+     //one name and age is always entered
+           Console.WriteLine();
+           Console.WriteLine(" Welcome to Option 4: the Oldest Person Program");
+           Console.WriteLine(" Enter a name and age below to begin playing or type in the word 'end' to return to the main menu");
+           Console.WriteLine();
+     
+            do
+            {
+        
+
+                      Console.Write(" Please enter a name: ");
+                      name = Console.ReadLine();
+                      success = (name != "end");
+
+                      if (success)
+                      {
+
+                                 Console.Write(" Please enter the age of " + name + ": ");
+                                 age = getvalidnumber();
+
+
+                      if (age > oldestage)
+                      {
+
+                                  oldestage = age;
+                                  oldestname = name;
+
+                      }
+                      }
+    
+            } while (success);//end of do while loop
+
+```
+### Second Code Example
+
+```C#
+ do
+ {
+
+           Console.Write(" Please begin by entering a positive integer that's greater than the number 1: ");
+           usernumber = getvalidnumber();
+           lessorequalto1 = (usernumber < 1 || usernumber == 1);
+           Console.WriteLine();
+           Console.Write(" You entered the number: " + usernumber);
+           Console.WriteLine();
+           if (lessorequalto1)
+           {
+
+                     Console.WriteLine(" Try again! You need to enter a positive number that's greater than 1");
+                     Console.WriteLine();
+
+
+           }
+ } while (lessorequalto1); 
+
+do
+{
+          if (usernumber % 2 == 0)
+          {
+
+                     usernumber = usernumber / 2;
+          }
+         else
+         {
+
+                     usernumber = usernumber * 3 + 1;
+
+         }
+
+         if (usernumber > 100)
+         {
+
+                     timesover100++;
+
+         }
+         if (usernumber > 1 || usernumber < 100)
+         {
+
+                     timesbetween1and100++;
+
+         }
+
+          totaliterations = timesbetween1and100 + timesover100;
+
+} while (usernumber != 1);
+            
+```
+## Takeaway From Project Creation
+Through dedicating time on enhancing the quality of the game, I learned how important the proper implementation of menus can be on the overall user experience. By allowing them to return to the menu once the game option they should has finished running it makes accessibility easier. Also adding an option for the user the quit the menu is greatly important if they no longer would like to continue playing.
