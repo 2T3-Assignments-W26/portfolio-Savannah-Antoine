@@ -1,4 +1,4 @@
-PowerShell
+gitPowerShell
 
 PowerShell Logo goes here
 

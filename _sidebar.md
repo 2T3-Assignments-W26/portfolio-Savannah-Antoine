@@ -6,5 +6,5 @@
   - [PowerShell](cheatsheets/powershell.md)
 
   - About me
-    - [My Projects](cheatsheets/myProjects.md)
-    - [Online Resume](cheatsheets/Savannah_Antoine_1921868.md)
+    - [My Projects](aboutme/myProjects.md)
+    - [Online Resume](aboutme/Savannah_Antoine_1921868.md)
